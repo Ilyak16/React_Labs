@@ -1,25 +1,30 @@
 import React from 'react';
 import './App.css';
-import { Square } from './Lab_1/Square';
-import { OnlyEven } from './Lab_1/OnlyEven';
-import { Temperature } from './Lab_1/Temperature';
-import { ColorButton } from './Lab_1/ColorButton';
+
+import Countdown from './Lab_2/Countdown';
+import Stopwatch from './Lab_2/Stopwatch';
+import PrimeNumbers from './Lab_2/PrimeNumbers';
+import TrafficLight from './Lab_2/TrafficLight';
+import Revert from './Lab_2/Revert';
 
 function App() {
   return (
     <div>
-      <h1>Задача 1: Square</h1>
-      <Square n={3} />
-      
-      <h1>Задача 2: OnlyEven</h1>
-      <OnlyEven arr={[14, 5, 6, 12, 21, 2]} />
-      
-      <h1>Задача 3: Temperature</h1>
-      <Temperature t={451} />
-      <Temperature t={-10} />
-      
-      <h1>Задача 4: ColorButton</h1>
-      <ColorButton />
+      <hr />
+      <h1>Lab 2 - Задача 1: Countdown</h1>
+      <Countdown />
+
+      <h1>Lab 2 - Задача 2: Stopwatch</h1>
+      <Stopwatch />
+
+      <h1>Lab 2 - Задача 3: Prime Numbers</h1>
+      <PrimeNumbers />
+
+      <h1>Lab 2 - Задача 4: Traffic Light</h1>
+      <TrafficLight />
+
+      <h1>Lab 2 - Задача 5: Revert</h1>
+      <Revert s="привет!" />
     </div>
   );
 }
